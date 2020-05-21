@@ -3,12 +3,26 @@ body {
   color: #fff;
   background-color: #BC243C;
   font-family: 'Oxygen', sans-serif;
+  position: relative;
 }
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+.affix ~ .container {
+  position: relative;
+  top: 50px;
+}
+
 
 #header-nav {
   background-color: #EFC050;
   border-radius: 0;
   border: 0;
+  margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -70,7 +84,6 @@ navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-
 
 @media (min-width: 767px) {
   #header-nav {
